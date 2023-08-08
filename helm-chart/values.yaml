@@ -5,7 +5,7 @@ replicaCount: 2  # Replace '3' with the desired number of replicas
 
 image:
   repository: itsvictorfy/final-proj
-  tag: e4e31bb
+  tag: c64f06f
   pullPolicy: IfNotPresent
   
 service:
