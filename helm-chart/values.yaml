@@ -16,6 +16,6 @@ service:
 
 database:
   host: postgresdb.database.svc.cluster.local
-  database: moviesDB
-  user: admin
+  database: moviesdb
+  user: postgres
   password: sqlAdmin
