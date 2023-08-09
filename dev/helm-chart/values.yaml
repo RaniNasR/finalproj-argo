@@ -1,5 +1,5 @@
 # Default values for film-library-app.
-namespace: prod
+namespace: dev
 
 replicaCount: 1  # Replace '3' with the desired number of replicas
 
