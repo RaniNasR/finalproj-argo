@@ -1,7 +1,7 @@
 # Default values for film-library-app.
 namespace: stage
 
-replicaCount: 2  # Replace '3' with the desired number of replicas
+replicaCount: 1  # Replace '3' with the desired number of replicas
 
 image:
   repository: itsvictorfy/final-proj
