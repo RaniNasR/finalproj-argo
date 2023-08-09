@@ -1,5 +1,5 @@
 # Default values for film-library-app.
-namespace: stage
+namespace: prod
 
 replicaCount: 1  # Replace '3' with the desired number of replicas
 
