@@ -19,24 +19,23 @@ spec:
           ports:
             - containerPort: 8080
           env:
-            - name: POSTGRES_DB
-              valueFrom:
-                secretKeyRef:
-                  name: app-db-conf
-                  key: POSTGRES_DB
-            - name: POSTGRES_USER
-              valueFrom:
-                secretKeyRef:
-                  name: app-db-conf
-                  key: POSTGRES_USER
-            - name: POSTGRES_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: app-db-conf
-                  key: POSTGRES_PASSWORD
-            - name: POSTGRES_PASSWORD
+            - name: DB_HOST
               valueFrom:
                 secretKeyRef:
                   name: app-db-conf
                   key: POSTGRES_HOST
-
+            - name: DB_USER
+              valueFrom:
+                secretKeyRef:
+                  name: app-db-conf
+                  key: POSTGRES_USER
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: app-db-conf
+                  key: POSTGRES_PASSWORD
+            - name: DB_DATABASE
+              valueFrom:
+                secretKeyRef:
+                  name: app-db-conf
+                  key: POSTGRES_DATABASE
