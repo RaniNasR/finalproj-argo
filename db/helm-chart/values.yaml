@@ -4,7 +4,7 @@ dbUser: "YWRtaW4="    # Base64-encoded value: "admin"
 dbPassword: "c3FsQWRtaW4="  # Base64-encoded value: "sqlAdmin"
 replicaCount: 1
 image: "h3xbar/final-proj"
-imageTag: 00dd16d
+imageTag: psgrsql1
 imagePullPolicy: Always
 resources:
   requests:
