@@ -13,9 +13,8 @@ spec:
 service:
   type: LoadBalancer
   port: 8080
-
 database:
   host: postgresdb.database.svc.cluster.local
-  database: "bW92aWVzREI="
-  user: "cG9zdGdyZXM="
-  password: "c3FsQWRtaW4="
+  database: "bW92aWVzREI="  # Base64-encoded value: "moviesDB"
+  user: "cG9zdGdyZXM="    # Base64-encoded value: "postgres"
+  password: "c3FsQWRtaW4="  # Base64-encoded value: "sqlAdmin"
