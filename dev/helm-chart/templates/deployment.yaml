@@ -39,12 +39,12 @@ spec:
                 secretKeyRef:
                   name: app-db-conf
                   key: POSTGRES_DB
-        command: ["/bin/sh"]
-        args:
-          - "-c"
-          - |
-            echo "Decoding secrets..."
-            export DB_HOST=$(echo $DB_HOST | base64 -d)
-            export DB_USER=$(echo $DB_USER | base64 -d)
-            export DB_PASSWORD=$(echo $DB_PASSWORD | base64 -d)
-            export DB_DATABASE=$(echo $DB_DATABASE | base64 -d)
+          command: ["/bin/sh"]
+          args:
+            - "-c"
+            - |
+              echo "Decoding secrets..."
+              export DB_HOST=$(echo $DB_HOST | base64 -d)
+              export DB_USER=$(echo $DB_USER | base64 -d)
+              export DB_PASSWORD=$(echo $DB_PASSWORD | base64 -d)
+              export DB_DATABASE=$(echo $DB_DATABASE | base64 -d)
