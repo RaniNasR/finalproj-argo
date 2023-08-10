@@ -1,3 +1,4 @@
+releaseName: postgres-db
 dbName: "bW92aWVzREI="  # Base64-encoded value: "moviesDB"
 dbUser: "YWRtaW4="    # Base64-encoded value: "admin"
 dbPassword: "c3FsQWRtaW4="  # Base64-encoded value: "sqlAdmin"
@@ -8,6 +9,5 @@ resources:
   requests:
     memory: "256Mi"
     cpu: "100m"
-
 persistence:
   size: 4Gi

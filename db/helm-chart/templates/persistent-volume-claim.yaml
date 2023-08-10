@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: db-data-{{ .Release.Name }}
+  name: db-data-postgresdb
 spec:
   accessModes:
     - ReadWriteOnce
