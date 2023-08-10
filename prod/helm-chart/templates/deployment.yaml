@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: "film-application"
+  name: "film-application-prod"
   namespace: {{.Values.namespace}}
 spec:
   replicas: {{ .Values.replicaCount }}
@@ -20,22 +20,10 @@ spec:
             - containerPort: 8080
           env:
             - name: DB_HOST
-              valueFrom:
-                secretKeyRef:
-                  name: app-db-conf
-                  key: POSTGRES_HOST
-            - name: DB_USER
-              valueFrom:
-                secretKeyRef:
-                  name: app-db-conf
-                  key: POSTGRES_USER
-            - name: DB_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: app-db-conf
-                  key: POSTGRES_PASSWORD
+              value: {{ .Values.database.host }}
             - name: DB_DATABASE
-              valueFrom:
-                secretKeyRef:
-                  name: app-db-conf
-                  key: POSTGRES_DB
+              value: {{ .Values.database.database }}
+            - name: DB_USER
+              value: {{ .Values.database.user }}
+            - name: DB_PASSWORD
+              value: {{ .Values.database.password }}
