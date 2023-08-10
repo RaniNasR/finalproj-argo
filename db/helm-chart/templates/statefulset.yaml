@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: postgresdb
-          image: postgresdb
+          image: {{ .Values.image }}
           imagePullPolicy: {{ .Values.imagePullPolicy }}
           ports:
             - containerPort: 5432
