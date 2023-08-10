@@ -17,5 +17,5 @@ service:
 database:
   host: postgresdb.database.svc.cluster.local
   dbName: "bW92aWVzREI="  # Base64-encoded value: "moviesDB"
-  dbUser: "cG9zdGdyZXM="    # Base64-encoded value: "admin"
+  dbUser: "cG9zdGdyZXM="    # Base64-encoded value: "postgres"
   dbPassword: "c3FsQWRtaW4="  # Base64-encoded value: "sqlAdmin"
