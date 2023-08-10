@@ -38,4 +38,4 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: app-db-conf
-                  key: POSTGRES_DATABASE
+                  key: POSTGRES_DB
