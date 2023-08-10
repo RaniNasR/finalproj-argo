@@ -3,7 +3,8 @@ dbName: "bW92aWVzREI="  # Base64-encoded value: "moviesDB"
 dbUser: "YWRtaW4="    # Base64-encoded value: "admin"
 dbPassword: "c3FsQWRtaW4="  # Base64-encoded value: "sqlAdmin"
 replicaCount: 1
-image: "h3xbar/final-proj:psgrsql1"
+image: "h3xbar/final-proj"
+imageTag: psgrsql1
 imagePullPolicy: Always
 resources:
   requests:
