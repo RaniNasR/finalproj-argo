@@ -10,5 +10,4 @@ resources:
     cpu: "100m"
 
 persistence:
-  enabled: true
   size: 4Gi
