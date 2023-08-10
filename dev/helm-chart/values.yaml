@@ -1,11 +1,11 @@
 # Default values for film-library-app.
-namespace: dev  # Replace 'default' with the desired namespace
+namespace: dev
 
 replicaCount: 1  # Replace '3' with the desired number of replicas
 
 image:
   repository: itsvictorfy/final-proj
-  tag: 2faf070
+  tag: 7ea56e4
   pullPolicy: IfNotPresent
 spec:
   replicaCount: 1
