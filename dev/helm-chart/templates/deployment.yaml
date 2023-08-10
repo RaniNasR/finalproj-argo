@@ -48,4 +48,5 @@ spec:
                 export DB_HOST=$(echo $DB_HOST | base64 -d) &&
                 export DB_USER=$(echo $DB_USER | base64 -d) &&
                 export DB_PASSWORD=$(echo $DB_PASSWORD | base64 -d) &&
-                export DB_DATABASE=$(echo $DB_DATABASE | base64 -d)
+                export DB_DATABASE=$(echo $DB_DATABASE | base64 -d) &&
+                /app/app.py
