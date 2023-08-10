@@ -42,3 +42,13 @@ spec:
         - name: db-data
           persistentVolumeClaim:
             claimName: db-data-postgresdb
+  volumeClaimTemplates:
+    - metadata:
+        name: db-data
+      spec:
+        storageClassName: standard-rwo
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 4Gi
