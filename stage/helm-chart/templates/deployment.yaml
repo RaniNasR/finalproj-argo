@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: "film-application-stage"
+  name: "film-application-{{ .Values.namespace }}"
   namespace: {{.Values.namespace}}
 spec:
   replicas: {{ .Values.replicaCount }}
@@ -22,20 +22,20 @@ spec:
             - name: DB_HOST
               valueFrom:
                 secretKeyRef:
-                  name: app-db-conf-stage
+                  name: app-db-conf-dev
                   key: POSTGRES_HOST
             - name: DB_USER
               valueFrom:
                 secretKeyRef:
-                  name: app-db-conf-stage
+                  name: app-db-conf-dev
                   key: POSTGRES_USER
             - name: DB_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: app-db-conf-stage
+                  name: app-db-conf-dev
                   key: POSTGRES_PASSWORD
             - name: DB_DATABASE
               valueFrom:
                 secretKeyRef:
-                  name: app-db-conf-stage
+                  name: app-db-conf-dev
                   key: POSTGRES_DB
