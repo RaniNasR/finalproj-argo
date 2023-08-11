@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: "film-application"
+  name: "film-application-stage"
   namespace: {{.Values.namespace}}
 spec:
   replicas: {{ .Values.replicaCount }}
