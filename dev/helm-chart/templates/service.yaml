@@ -9,4 +9,4 @@ spec:
     - port: {{ .Values.service.port }}
       targetPort: 8080
   selector:
-    app: "film-application-dev"
+    app: "film-application"
