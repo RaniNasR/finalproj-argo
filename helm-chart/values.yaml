@@ -1,21 +1,21 @@
-# Default values for film-library-app.
-namespace: prod
+namespace: stage
 
-replicaCount: 1  # Replace '3' with the desired number of replicas
+replicaCount: 1
 
 image:
   repository: itsvictorfy/final-proj
-
-  tag: beefbfd
-
+  tag: d343aa5
   pullPolicy: IfNotPresent
-  
+
+spec:
+  replicaCount: 1
+
 service:
   type: LoadBalancer
   port: 8080
 
 database:
   host: postgresdb.database.svc.cluster.local
-  database: moviesdb
-  user: postgres
-  password: sqlAdmin
+  dbName: "bW92aWVzREI="  # Base64-encoded value: "moviesDB"
+  dbUser: "cG9zdGdyZXM="    # Base64-encoded value: "postgres"
+  dbPassword: "c3FsQWRtaW4="  # Base64-encoded value: "sqlAdmin"

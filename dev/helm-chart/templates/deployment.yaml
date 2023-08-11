@@ -22,20 +22,20 @@ spec:
             - name: DB_HOST
               valueFrom:
                 secretKeyRef:
-                  name: app-db-conf-dev
+                  name: app-db-conf-{{ .Values.namespace }}
                   key: POSTGRES_HOST
             - name: DB_USER
               valueFrom:
                 secretKeyRef:
-                  name: app-db-conf-dev
+                  name: app-db-conf-{{ .Values.namespace }}
                   key: POSTGRES_USER
             - name: DB_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: app-db-conf-dev
+                  name: app-db-conf-{{ .Values.namespace }}
                   key: POSTGRES_PASSWORD
             - name: DB_DATABASE
               valueFrom:
                 secretKeyRef:
-                  name: app-db-conf-dev
+                  name: app-db-conf-{{ .Values.namespace }}
                   key: POSTGRES_DB
