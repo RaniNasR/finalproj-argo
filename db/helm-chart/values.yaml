@@ -1,6 +1,6 @@
 releaseName: postgres-db
 dbName: "bW92aWVzREI="  # Base64-encoded value: "moviesDB"
-dbUser: "YWRtaW4="    # Base64-encoded value: "admin"
+dbUser: "cG9zdGdyZXM="    # Base64-encoded value: "postgres"
 dbPassword: "c3FsQWRtaW4="  # Base64-encoded value: "sqlAdmin"
 replicaCount: 1
 image: "h3xbar/final-proj"
