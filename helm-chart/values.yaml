@@ -1,10 +1,10 @@
-namespace: stage
+namespace: prod
 
 replicaCount: 1
 
 image:
   repository: itsvictorfy/final-proj
-  tag: d343aa5
+  tag: 37d0a94
   pullPolicy: IfNotPresent
 
 spec:
